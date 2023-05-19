@@ -1,0 +1,43 @@
+{
+  "name": "WhisperDiarization",
+  "version": "0.1.7",
+  "summary": "A short description of WhisperDiarization.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/NeoWorldTeam/WhisperDiarization",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fuhao": "fangshiyu2@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:NeoWorldTeam/WhisperDiarization.git",
+    "tag": "0.1.7"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "WhisperDiarization/Classes/**/*.{c,cpp,swift,m,mm,h}",
+  "vendored_frameworks": "WhisperDiarization/Frameworks/**/*.framework",
+  "static_framework": true,
+  "resource_bundles": {
+    "WhisperDiarization": [
+      "WhisperDiarization/Assets/**/*.{bin}"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "dependencies": {
+    "SpeakerEmbeddingForiOS": [
+
+    ],
+    "ObjectMapper": [
+
+    ]
+  }
+}

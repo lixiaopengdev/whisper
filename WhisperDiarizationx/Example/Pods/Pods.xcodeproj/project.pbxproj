@@ -1,0 +1,1773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		01D26C9790741D5F08E2B47A48D79331 /* onnxruntime-c */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F7952BEBED5F91B23DF557A9921B9F1 /* Build configuration list for PBXAggregateTarget "onnxruntime-c" */;
+			buildPhases = (
+				1A678187E179F578A4C83F5403F96960 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "onnxruntime-c";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		100E6E8E8F6FF6449F782940B65BA119 /* CSSpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE25F7E291609A42BA6F7D1C0697A2D3 /* CSSpeechRecognition.swift */; };
+		1602FF74C37367DA00B9039B53E53365 /* Pods-WhisperDiarization_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A72131B2FB89BC16412EBB4D432E2E7A /* Pods-WhisperDiarization_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E9283ADA107CC34D25395AB5F67212 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E17EDE767FA961D623CC3D9C52C639E /* ToJSON.swift */; };
+		1AA0CC642A715A07F0EB0313DCB04CA4 /* MLTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0800304D8C971A0C11905C8C9796FB7F /* MLTools.swift */; };
+		1AF60BF79A190FCF63C9135BF6292F7E /* DefaultClusteringAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6C50B6FF40390587E2ABE16E19BC45 /* DefaultClusteringAlgorithm.swift */; };
+		1C8C33626D4B515F7C3416A54BCD9B21 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8107277AE5817A374BADDD06C68089A /* CustomDateFormatTransform.swift */; };
+		20CCEE43CCC7613E3812B73214688D48 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B42C873F6A5DE615BC2F7111B7FB803 /* TransformType.swift */; };
+		20CDA9618B09C29126A5E21A89135554 /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F90A9303B8B7A67136966CDE458E4F /* Cluster.swift */; };
+		2DBA3EBF9138795BF487751527499F20 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ADA90A07E02379F51CF5DE01B9EE95 /* DateFormatterTransform.swift */; };
+		308DE0CCA1F57752986EBBAE1AF6FB2D /* AggClusteringWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8510995C60B6319538DBEDF3F4819F95 /* AggClusteringWrapper.mm */; };
+		36528256DF415BCF30042FF14245BFA1 /* ggml-tiny.bin in Resources */ = {isa = PBXBuildFile; fileRef = BA3107377DA973AE63C7274CE00DD901 /* ggml-tiny.bin */; };
+		38E09C35CDE537B845BC824107B27F22 /* WhisperDiarization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FECC830CD10A49C9FD3CD14060B836 /* WhisperDiarization.swift */; };
+		391B8F1603DC2E64267C9F238EF72002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		39A4432E8C1DB203709C70DDD9C3D58A /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94DD2405474A2BAC86D17F6B28A306 /* DateTransform.swift */; };
+		3B585A096DD9D0159A06DFA2BAEFDF80 /* Pods-WhisperDiarization_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2F05BE9C57B628ECF42F8A24BC246 /* Pods-WhisperDiarization_Example-dummy.m */; };
+		3E334140FBE5DFD4DDA5C3D3FCB54B9A /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C0D2DE8DCCA540D5D8D33BCDD9BD5 /* HexColorTransform.swift */; };
+		3EA3D3809293130859481308A6E750F1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C499495B7397670FAB0FDA52EECA64 /* NSDecimalNumberTransform.swift */; };
+		4104C5610D76199B82EB473CCB2436F6 /* VoiceActivityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3564D31C591D6799B8F053867E9BA5 /* VoiceActivityDetector.swift */; };
+		444145EF6F34FF6C05D78782CF920DCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		44559ED577E0FD51DF9E11141E5189B8 /* AudioPreprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12951F8112899AAA53592756940F4725 /* AudioPreprocess.swift */; };
+		471FC0BF392F6EBEC37D36AFADBF9D07 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B5B88F519EA4FF81E7E3F3CBD776A /* EnumOperators.swift */; };
+		47E2C525E59F47420C1713D6E8B48A83 /* Pods-WhisperDiarization_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D2016176AB539649206AEA091E1051 /* Pods-WhisperDiarization_Tests-dummy.m */; };
+		4990C571DE02BFFCC77DB6E47CB678C3 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15BD0B38666A225E3774866D7CBB4A /* URLTransform.swift */; };
+		510FBF3DECB66440ABC572721932C8F4 /* AggClusteringWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E144C60BE75CCA26D4A92E2FF42305 /* AggClusteringWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546C906FAFCB0A669122C46AAE38D3F5 /* SpeakerEmbeddingModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932FDEDBC8A37657F4024BC76CA7A60C /* SpeakerEmbeddingModelHandler.swift */; };
+		56437A90E72B34971174E333CA13CE04 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF861DED8493BAB9B384824A146C51 /* Mapper.swift */; };
+		5AEB6F069B9A950A022F53B6EAE444A1 /* silero_vad_cache.onnx in Resources */ = {isa = PBXBuildFile; fileRef = BAD5FDFF6FAC075E1B4F4098D59CC96E /* silero_vad_cache.onnx */; };
+		60172A74CDB786B63D9BF8195669DBF5 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC30AA288B1F5F02DC94A10D7624FD /* EnumTransform.swift */; };
+		621D74548A8CABDE4A330FEDD6F4FD8E /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA568494336269299D798DE92E953D1 /* DataTransform.swift */; };
+		62C958965D43F499F62C6935AD317076 /* WhisperDiarization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD4A90CE9E133D869EF57893C15AA23 /* WhisperDiarization-dummy.m */; };
+		6444BA82DAE36778F057B88B838160D8 /* silhouette_score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCEEEFE25A22C7482982BD7D179872F7 /* silhouette_score.cpp */; };
+		64E2778E863694A67E91F1CE694E9D8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6964E59428F6ECCEA845D1684AA20B39 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE73D22F1DF9AE70811FD0E86F64AFA /* Map.swift */; };
+		69F64952F31B918A1FE35BB27DAC18D8 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE52470C88A20883319D47B690CF9639 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		706A0C3BEA6DFE2739D6FCA2A97EE584 /* SpeechRecognizeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4C5C35E494402305DAC4C51264CB4 /* SpeechRecognizeModule.swift */; };
+		78397012DB20B182137458611835885C /* VADModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77457C363B82F39D7AD78FCFB808AD83 /* VADModelHandler.swift */; };
+		83FECA05902E21A7DEEA535321C46E50 /* SpeakerEmbeddingForiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20191D121DEE959C896FCC8CE3EF7382 /* SpeakerEmbeddingForiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		840E2E033502B40159DF58D1ED21AFD6 /* AggClustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7ABFE7FAD155FBE889D1DD0A638F79 /* AggClustering.cpp */; };
+		88AE40E9504B60FB729CD33350FC6376 /* SpeakerAnalyseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5750701648C34072C165C4DDECCF1C /* SpeakerAnalyseModule.swift */; };
+		9374C23021FD1266659BDA9EB4BB41FC /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0310DFF611783F1306D547A043A7F /* FromJSON.swift */; };
+		96017BC929FFDBD22711B1022DE4CE2D /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5989A88397B3DBFC64E1204AD6F4A7C /* ISO8601DateTransform.swift */; };
+		9F87FEF595EEB1A7BD49C3E8FB7539AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9F8855E7B398F5C36E538027F4A0CBF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A0E10F57E4BCA507F928C691798A45AF /* BufferQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757148E5531878D621BDF60D28C62F71 /* BufferQueue.swift */; };
+		A7BC12B3EFCD0F712EEAEC602498C1CE /* VADModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EFBB1D0E3F1CA89074BC842FDADEC /* VADModule.swift */; };
+		AEA20D13912351E4E5BE85E1B07E11A8 /* Pods-WhisperDiarization_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7A279F69400ECFAB73573C9FE8A812 /* Pods-WhisperDiarization_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B43B118A2EBEA4974052F12F614C13C6 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A3EE7A780B193507ED8B20EE8A1C1D /* ObjectMapper-dummy.m */; };
+		B449DA71AEEF878482A26399CA9568D3 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30897CE9A4875F710D966C6A744FEC17 /* CodableTransform.swift */; };
+		C14EAF94DFF6C99436052FDA9333FB2F /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19699C6EE94F93E7D2E31792DD1BEE6 /* ImmutableMappable.swift */; };
+		C34CE6A6216C3BB721B7F3FD615540E7 /* speaker_embedding0.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 4920433454FE9895692F842194D2001E /* speaker_embedding0.onnx */; };
+		C63B89F02DDA304D7F30E4DC2DACE056 /* SpeakerEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF229B776C1C1CC9741E92AF09F0016B /* SpeakerEmbedding.swift */; };
+		C7A75B95E04CA4ACE3C3F002E658409C /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1A0B824ABA1882B6441155EAB7D14 /* DictionaryTransform.swift */; };
+		C9C4216E4AD462E21B74FAF9C17D0B8B /* SpeakerEmbeddingForiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8399FCB74195F9F116A611A40154CE /* SpeakerEmbeddingForiOS-dummy.m */; };
+		D48DE1E5756BD4111DC7163FCCAEBF01 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436DD35B58DEA1FC48530EF62423A3A /* Operators.swift */; };
+		D84BACBC4F42A86472652CCD5205F1FA /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B38BB1EFE7F9F6A31D96752EE3296 /* Mappable.swift */; };
+		D8E71B907ACA89EEE21AA719F950695A /* SpeakerAnalyseTempModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D448A132537A1C9F500D36D29C7663B /* SpeakerAnalyseTempModule.swift */; };
+		DD5F9831BD57D404B314AE30D869AAD9 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2268E998B0FF71B344B191C8BDE7475 /* TransformOperators.swift */; };
+		DF24CE81C8CA841B807B63E1FED38259 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2CB21D2CF885BFA0E6E6989A9813D /* TransformOf.swift */; };
+		E288BDF41B3C287145911A343BB1F991 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0768364BAA5816A9F546E328B616733 /* IntegerOperators.swift */; };
+		E3527B2BD970A8ECFB340D08D1FB4617 /* WhisperDiarization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5DD423EFD77AFF8CAD26C0AC1031C8 /* WhisperDiarization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5EC111C9EB089D63E72B9CDBE40D616 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5F06BCB2716ACA1E6BA690C56B0AB /* MapError.swift */; };
+		EA6122FA6EAC650E4DC91EBF5539E7F4 /* SilhouetteScoreWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 00244DDAC169C089280AD377AEEDFD11 /* SilhouetteScoreWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4346A49D3F1C132FE2F31C87402506 /* SilhouetteScoreWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86E3F0E630B1C0C105942F1DD9A3CAB3 /* SilhouetteScoreWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C20AD8B049412463E8737F9E8512664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D26C9790741D5F08E2B47A48D79331;
+			remoteInfo = "onnxruntime-c";
+		};
+		12B14A37F93939EBD3123FACCE43242E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB01554A2693E3FF64FF373E2C3B679C;
+			remoteInfo = "Pods-WhisperDiarization_Example";
+		};
+		41A404F6A2D6E604558E0615C2FC645C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
+		4A20929EDECE1872311D3914AFEED1CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B6416127E95E7D6E068918AC4AB5D0;
+			remoteInfo = WhisperDiarization;
+		};
+		70AC8953BC99AB31480BA2FB36F164EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81188241A9F07112234699CD724526B;
+			remoteInfo = "WhisperDiarization-WhisperDiarization";
+		};
+		8D26120E40B7C9866E9002EBEE914DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15C4B9C85FD62740FCBBE535E6BE1E0;
+			remoteInfo = SpeakerEmbeddingForiOS;
+		};
+		931F687E0CEB066EC101EC64738DCFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D26C9790741D5F08E2B47A48D79331;
+			remoteInfo = "onnxruntime-c";
+		};
+		C72306D5D2069D908B2C205EFBB1DA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15C4B9C85FD62740FCBBE535E6BE1E0;
+			remoteInfo = SpeakerEmbeddingForiOS;
+		};
+		F6DE48F5F7AF34E395703939DDF9AD64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6EC17F6D473C126EC48FB660192CC9;
+			remoteInfo = "SpeakerEmbeddingForiOS-SpeakerEmbedding";
+		};
+		FB9F9A261B59D45591A38DA0CA2DAE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00244DDAC169C089280AD377AEEDFD11 /* SilhouetteScoreWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SilhouetteScoreWrapper.h; sourceTree = "<group>"; };
+		024581568B53D80B6F554C35858D2BDA /* WhisperDiarization.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WhisperDiarization.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0800304D8C971A0C11905C8C9796FB7F /* MLTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MLTools.swift; sourceTree = "<group>"; };
+		0C21D38BF4F31FC7D489B471E1B7E69C /* whisperxx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = whisperxx.framework; path = WhisperDiarization/Frameworks/whisperxx.framework; sourceTree = "<group>"; };
+		12951F8112899AAA53592756940F4725 /* AudioPreprocess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioPreprocess.swift; path = WhisperDiarization/Classes/AudioPreprocess.swift; sourceTree = "<group>"; };
+		18B7665FACAA5A2C6D92D81624366784 /* Pods-WhisperDiarization_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhisperDiarization_Example.modulemap"; sourceTree = "<group>"; };
+		19CD4AAD3A2AC5DEC14B3979B242AEB5 /* onnxruntime-c-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "onnxruntime-c-xcframeworks.sh"; sourceTree = "<group>"; };
+		1A9B38BB1EFE7F9F6A31D96752EE3296 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		1B42C873F6A5DE615BC2F7111B7FB803 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		1CD25F83571E16379A26ECF6C80CA82C /* ResourceBundle-WhisperDiarization-WhisperDiarization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-WhisperDiarization-WhisperDiarization-Info.plist"; sourceTree = "<group>"; };
+		1D8399FCB74195F9F116A611A40154CE /* SpeakerEmbeddingForiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpeakerEmbeddingForiOS-dummy.m"; sourceTree = "<group>"; };
+		1E17EDE767FA961D623CC3D9C52C639E /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
+		20191D121DEE959C896FCC8CE3EF7382 /* SpeakerEmbeddingForiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeakerEmbeddingForiOS-umbrella.h"; sourceTree = "<group>"; };
+		2C3564D31C591D6799B8F053867E9BA5 /* VoiceActivityDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceActivityDetector.swift; path = SpeakerEmbeddingForiOS/Classes/VoiceActivityDetector.swift; sourceTree = "<group>"; };
+		2DD4C5C35E494402305DAC4C51264CB4 /* SpeechRecognizeModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeechRecognizeModule.swift; sourceTree = "<group>"; };
+		30897CE9A4875F710D966C6A744FEC17 /* CodableTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransform.swift; path = Sources/CodableTransform.swift; sourceTree = "<group>"; };
+		37AD59EE3161D88B774FFA1C87F3B9F5 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		39CCC7BC3A107028226DA9E09FB995A1 /* Pods-WhisperDiarization_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WhisperDiarization_Tests"; path = Pods_WhisperDiarization_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7ABFE7FAD155FBE889D1DD0A638F79 /* AggClustering.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = AggClustering.cpp; sourceTree = "<group>"; };
+		4436DD35B58DEA1FC48530EF62423A3A /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		4920433454FE9895692F842194D2001E /* speaker_embedding0.onnx */ = {isa = PBXFileReference; includeInIndex = 1; name = speaker_embedding0.onnx; path = SpeakerEmbeddingForiOS/Assets/speaker_embedding0.onnx; sourceTree = "<group>"; };
+		49F2F05BE9C57B628ECF42F8A24BC246 /* Pods-WhisperDiarization_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhisperDiarization_Example-dummy.m"; sourceTree = "<group>"; };
+		4AF5F06BCB2716ACA1E6BA690C56B0AB /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		4CDE84A5E87FE60C0233F2D1F5A56EC5 /* WhisperDiarization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WhisperDiarization.release.xcconfig; sourceTree = "<group>"; };
+		50F1E3C771F0C8F08796566D4E24B42F /* Pods-WhisperDiarization_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhisperDiarization_Example-resources.sh"; sourceTree = "<group>"; };
+		53AE425716197A3F2A8A1316E4ABE6BC /* SpeakerEmbeddingForiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpeakerEmbeddingForiOS.modulemap; sourceTree = "<group>"; };
+		562597A095E7EF1C4B15C33062ACD1AF /* WhisperDiarization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WhisperDiarization-Info.plist"; sourceTree = "<group>"; };
+		5754FE0EC8E707304F8A061FC2415F55 /* SpeakerEmbeddingForiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpeakerEmbeddingForiOS.debug.xcconfig; sourceTree = "<group>"; };
+		5B94DD2405474A2BAC86D17F6B28A306 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		5E0A1198A9C755CB2A8BC8C2E0D606E3 /* Pods-WhisperDiarization_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhisperDiarization_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E15BD0B38666A225E3774866D7CBB4A /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		69D04C86CA511D4C946B9D6BD39B1ABD /* Pods-WhisperDiarization_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhisperDiarization_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6AE886D3256A56B114D6BE0CA9315198 /* onnxruntime_c_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = onnxruntime_c_api.h; path = Headers/onnxruntime_c_api.h; sourceTree = "<group>"; };
+		6E0CA16D7BDA881D8EE1E691D4243B83 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SpeakerEmbeddingForiOS-SpeakerEmbedding"; path = SpeakerEmbedding.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7A279F69400ECFAB73573C9FE8A812 /* Pods-WhisperDiarization_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhisperDiarization_Tests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		757148E5531878D621BDF60D28C62F71 /* BufferQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BufferQueue.swift; path = WhisperDiarization/Classes/BufferQueue.swift; sourceTree = "<group>"; };
+		75A3023B5F8EDE36AC9440C24B7D659E /* SpeakerEmbeddingForiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeakerEmbeddingForiOS; path = SpeakerEmbeddingForiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77457C363B82F39D7AD78FCFB808AD83 /* VADModelHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADModelHandler.swift; path = SpeakerEmbeddingForiOS/Classes/VADModelHandler.swift; sourceTree = "<group>"; };
+		77B223BA786DAF703905CD9E50C24FE0 /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
+		7881C27EC87630AA189C3D4FFE2F3DB9 /* onnxruntime.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = onnxruntime.xcframework; sourceTree = "<group>"; };
+		78EAB00917B050657E436E18B2506572 /* SpeakerEmbeddingForiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeakerEmbeddingForiOS-prefix.pch"; sourceTree = "<group>"; };
+		7909D84985070FCAE2143FF12B897DEC /* Pods-WhisperDiarization_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WhisperDiarization_Example"; path = Pods_WhisperDiarization_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8030B4E3AD55441D631B36FF059B7543 /* Pods-WhisperDiarization_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhisperDiarization_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8510995C60B6319538DBEDF3F4819F95 /* AggClusteringWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = AggClusteringWrapper.mm; sourceTree = "<group>"; };
+		86E3F0E630B1C0C105942F1DD9A3CAB3 /* SilhouetteScoreWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SilhouetteScoreWrapper.mm; sourceTree = "<group>"; };
+		88E144C60BE75CCA26D4A92E2FF42305 /* AggClusteringWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AggClusteringWrapper.h; sourceTree = "<group>"; };
+		891C0D2DE8DCCA540D5D8D33BCDD9BD5 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		89D2016176AB539649206AEA091E1051 /* Pods-WhisperDiarization_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhisperDiarization_Tests-dummy.m"; sourceTree = "<group>"; };
+		8C920CCAA651464522C499C5A78E52E1 /* SpeakerEmbeddingForiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SpeakerEmbeddingForiOS-Info.plist"; sourceTree = "<group>"; };
+		8D448A132537A1C9F500D36D29C7663B /* SpeakerAnalyseTempModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeakerAnalyseTempModule.swift; sourceTree = "<group>"; };
+		932FDEDBC8A37657F4024BC76CA7A60C /* SpeakerEmbeddingModelHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeakerEmbeddingModelHandler.swift; path = SpeakerEmbeddingForiOS/Classes/SpeakerEmbeddingModelHandler.swift; sourceTree = "<group>"; };
+		94FECC830CD10A49C9FD3CD14060B836 /* WhisperDiarization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperDiarization.swift; path = WhisperDiarization/Classes/WhisperDiarization.swift; sourceTree = "<group>"; };
+		9944645B23DA38AD70DB8DE21E1ECABC /* Pods-WhisperDiarization_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhisperDiarization_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B6E228CA332CC45F14CCBD9E0C4A985 /* Pods-WhisperDiarization_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhisperDiarization_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9BF01448FFF8BC7CDE7F241033FDED55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAD18CD363F25E45D3EB747DB04E684 /* Pods-WhisperDiarization_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhisperDiarization_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A0A3EE7A780B193507ED8B20EE8A1C1D /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		A19699C6EE94F93E7D2E31792DD1BEE6 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		A72131B2FB89BC16412EBB4D432E2E7A /* Pods-WhisperDiarization_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhisperDiarization_Example-umbrella.h"; sourceTree = "<group>"; };
+		A8107277AE5817A374BADDD06C68089A /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		A9B6B635DD7A5AD499E5635ACB81C602 /* coreml_provider_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coreml_provider_factory.h; path = Headers/coreml_provider_factory.h; sourceTree = "<group>"; };
+		ADDB6B21BEF43C78DE895B55DE121083 /* Pods-WhisperDiarization_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhisperDiarization_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AFCA8C9F42A482086A562683195DA0C9 /* Pods-WhisperDiarization_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhisperDiarization_Example-Info.plist"; sourceTree = "<group>"; };
+		B273B2D247BBB5FE82C3AC7BA496532B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B5989A88397B3DBFC64E1204AD6F4A7C /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		B5C2CB21D2CF885BFA0E6E6989A9813D /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		B6B560F5B10326FDDB52D610047F5089 /* WhisperDiarization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WhisperDiarization.debug.xcconfig; sourceTree = "<group>"; };
+		B6FC30AA288B1F5F02DC94A10D7624FD /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		B7F014227F7A78F49E332EBC8622CE11 /* WhisperDiarization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WhisperDiarization; path = WhisperDiarization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81B5B88F519EA4FF81E7E3F3CBD776A /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3107377DA973AE63C7274CE00DD901 /* ggml-tiny.bin */ = {isa = PBXFileReference; includeInIndex = 1; name = "ggml-tiny.bin"; path = "WhisperDiarization/Assets/ggml-tiny.bin"; sourceTree = "<group>"; };
+		BAD5FDFF6FAC075E1B4F4098D59CC96E /* silero_vad_cache.onnx */ = {isa = PBXFileReference; includeInIndex = 1; name = silero_vad_cache.onnx; path = SpeakerEmbeddingForiOS/Assets/silero_vad_cache.onnx; sourceTree = "<group>"; };
+		BCEEEFE25A22C7482982BD7D179872F7 /* silhouette_score.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = silhouette_score.cpp; sourceTree = "<group>"; };
+		BE25F7E291609A42BA6F7D1C0697A2D3 /* CSSpeechRecognition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSpeechRecognition.swift; path = WhisperDiarization/Classes/CSSpeechRecognition.swift; sourceTree = "<group>"; };
+		BE52470C88A20883319D47B690CF9639 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		BF010FE13FA9066F8D4646BB3BB5EC67 /* onnxruntime-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "onnxruntime-c.debug.xcconfig"; sourceTree = "<group>"; };
+		C5E55A9894FEE14EFE9A25AC825CBD4C /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		C6D4B71DA33E21D02891C26DD5FEDDB7 /* Pods-WhisperDiarization_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhisperDiarization_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CAC641315DFD037023F3DCB6F6AB4BCA /* SpeakerEmbeddingForiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpeakerEmbeddingForiOS.release.xcconfig; sourceTree = "<group>"; };
+		CBA568494336269299D798DE92E953D1 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		CC836A46A635C4C1FFBA2531251CC69D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CCAF861DED8493BAB9B384824A146C51 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		CDD4A90CE9E133D869EF57893C15AA23 /* WhisperDiarization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WhisperDiarization-dummy.m"; sourceTree = "<group>"; };
+		D0768364BAA5816A9F546E328B616733 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
+		D08F7CAD0BE0321BA0F1F14BFDBEF014 /* onnxruntime_cxx_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = onnxruntime_cxx_api.h; path = Headers/onnxruntime_cxx_api.h; sourceTree = "<group>"; };
+		D2268E998B0FF71B344B191C8BDE7475 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		D2772E18A3A91B32EC00DEC15D4A492E /* onnxruntime_cxx_inline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = onnxruntime_cxx_inline.h; path = Headers/onnxruntime_cxx_inline.h; sourceTree = "<group>"; };
+		D6CA33717BBFFDD18F34E0E9F8CA5A2B /* WhisperDiarization-WhisperDiarization */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "WhisperDiarization-WhisperDiarization"; path = WhisperDiarization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C499495B7397670FAB0FDA52EECA64 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		D7CF02827BFF4444C330AE96B9147A9F /* Pods-WhisperDiarization_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhisperDiarization_Tests-Info.plist"; sourceTree = "<group>"; };
+		D95EFBB1D0E3F1CA89074BC842FDADEC /* VADModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VADModule.swift; sourceTree = "<group>"; };
+		DB5B188FA68D410D95E411C3491880FD /* WhisperDiarization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WhisperDiarization.modulemap; sourceTree = "<group>"; };
+		DC07AA5B57CB0C6F973C158CAEE3456B /* cpu_provider_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cpu_provider_factory.h; path = Headers/cpu_provider_factory.h; sourceTree = "<group>"; };
+		DD5DD423EFD77AFF8CAD26C0AC1031C8 /* WhisperDiarization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhisperDiarization-umbrella.h"; sourceTree = "<group>"; };
+		DE5750701648C34072C165C4DDECCF1C /* SpeakerAnalyseModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeakerAnalyseModule.swift; sourceTree = "<group>"; };
+		DED38763A8C3425D3CB1A841EA741802 /* ObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.release.xcconfig; sourceTree = "<group>"; };
+		E0EDADAA51D34C4660B878F220B5EDDA /* ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		E4C1A0B824ABA1882B6441155EAB7D14 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		E5ADA90A07E02379F51CF5DE01B9EE95 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		E6AF5C44F18194047788488930617932 /* Pods-WhisperDiarization_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhisperDiarization_Tests.modulemap"; sourceTree = "<group>"; };
+		E7C550DD703AA22A76F72868D99C0E1F /* ResourceBundle-SpeakerEmbedding-SpeakerEmbeddingForiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SpeakerEmbedding-SpeakerEmbeddingForiOS-Info.plist"; sourceTree = "<group>"; };
+		E8F90A9303B8B7A67136966CDE458E4F /* Cluster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		EBCAF9F2043649375F3FB1290E74F572 /* Pods-WhisperDiarization_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhisperDiarization_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD6B1F96FCB6058B9F49B599A0BF9D0 /* onnxruntime-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "onnxruntime-c.release.xcconfig"; sourceTree = "<group>"; };
+		EC4302EBC158B6112239CB9A70975647 /* onnxruntime_objc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = onnxruntime_objc.framework; path = SpeakerEmbeddingForiOS/Frameworks/onnxruntime_objc.framework; sourceTree = "<group>"; };
+		EF229B776C1C1CC9741E92AF09F0016B /* SpeakerEmbedding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeakerEmbedding.swift; path = SpeakerEmbeddingForiOS/Classes/SpeakerEmbedding.swift; sourceTree = "<group>"; };
+		F083E928061756E76B3A7C01BD993AEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FAA0310DFF611783F1306D547A043A7F /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		FC393CE8B65A49CC5D2ACCA08914B815 /* WhisperDiarization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhisperDiarization-prefix.pch"; sourceTree = "<group>"; };
+		FC6C50B6FF40390587E2ABE16E19BC45 /* DefaultClusteringAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultClusteringAlgorithm.swift; sourceTree = "<group>"; };
+		FEE73D22F1DF9AE70811FD0E86F64AFA /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		FFA2402D191670AA6215A8EA62200C22 /* SpeakerEmbeddingForiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SpeakerEmbeddingForiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CF4790EDA21830B14D190CB0D642765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444145EF6F34FF6C05D78782CF920DCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74667CB36F04C752BCE5E0571E8304E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8855E7B398F5C36E538027F4A0CBF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A826F7962FEBE08051744A7F4B3B27D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF02D80FCEAE9AA5006E82B4455E6890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E2778E863694A67E91F1CE694E9D8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8A2295AD29F05916D1D8FF08C09DBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C5355B34C83B8E85546780A97CBD29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391B8F1603DC2E64267C9F238EF72002 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F556171747ED02ECA7774FD3CEB3E9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F87FEF595EEB1A7BD49C3E8FB7539AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F89AD28575630A42F9EC0C8E30B4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */,
+				7909D84985070FCAE2143FF12B897DEC /* Pods-WhisperDiarization_Example */,
+				39CCC7BC3A107028226DA9E09FB995A1 /* Pods-WhisperDiarization_Tests */,
+				75A3023B5F8EDE36AC9440C24B7D659E /* SpeakerEmbeddingForiOS */,
+				6E0CA16D7BDA881D8EE1E691D4243B83 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */,
+				B7F014227F7A78F49E332EBC8622CE11 /* WhisperDiarization */,
+				D6CA33717BBFFDD18F34E0E9F8CA5A2B /* WhisperDiarization-WhisperDiarization */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		037F76DA00951D3F0CBA14860C18FA2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CD4AAD3A2AC5DEC14B3979B242AEB5 /* onnxruntime-c-xcframeworks.sh */,
+				BF010FE13FA9066F8D4646BB3BB5EC67 /* onnxruntime-c.debug.xcconfig */,
+				EBD6B1F96FCB6058B9F49B599A0BF9D0 /* onnxruntime-c.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/onnxruntime-c";
+			sourceTree = "<group>";
+		};
+		05C0AF11227E94C3C84F18A3619146D0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DE5750701648C34072C165C4DDECCF1C /* SpeakerAnalyseModule.swift */,
+				8D448A132537A1C9F500D36D29C7663B /* SpeakerAnalyseTempModule.swift */,
+				2DD4C5C35E494402305DAC4C51264CB4 /* SpeechRecognizeModule.swift */,
+				D95EFBB1D0E3F1CA89074BC842FDADEC /* VADModule.swift */,
+			);
+			name = Module;
+			path = WhisperDiarization/Classes/Module;
+			sourceTree = "<group>";
+		};
+		07865A552A7DA17453E3BC67ADBC3A92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7C550DD703AA22A76F72868D99C0E1F /* ResourceBundle-SpeakerEmbedding-SpeakerEmbeddingForiOS-Info.plist */,
+				53AE425716197A3F2A8A1316E4ABE6BC /* SpeakerEmbeddingForiOS.modulemap */,
+				1D8399FCB74195F9F116A611A40154CE /* SpeakerEmbeddingForiOS-dummy.m */,
+				8C920CCAA651464522C499C5A78E52E1 /* SpeakerEmbeddingForiOS-Info.plist */,
+				78EAB00917B050657E436E18B2506572 /* SpeakerEmbeddingForiOS-prefix.pch */,
+				20191D121DEE959C896FCC8CE3EF7382 /* SpeakerEmbeddingForiOS-umbrella.h */,
+				5754FE0EC8E707304F8A061FC2415F55 /* SpeakerEmbeddingForiOS.debug.xcconfig */,
+				CAC641315DFD037023F3DCB6F6AB4BCA /* SpeakerEmbeddingForiOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../WhisperDiarization/Example/Pods/Target Support Files/SpeakerEmbeddingForiOS";
+			sourceTree = "<group>";
+		};
+		0993D51A2406D3302A5069F218B64A01 /* meter */ = {
+			isa = PBXGroup;
+			children = (
+				0800304D8C971A0C11905C8C9796FB7F /* MLTools.swift */,
+				BCEEEFE25A22C7482982BD7D179872F7 /* silhouette_score.cpp */,
+				00244DDAC169C089280AD377AEEDFD11 /* SilhouetteScoreWrapper.h */,
+				86E3F0E630B1C0C105942F1DD9A3CAB3 /* SilhouetteScoreWrapper.mm */,
+			);
+			name = meter;
+			path = meter;
+			sourceTree = "<group>";
+		};
+		127FF7AB0E064949F8569217F303B49B /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				30897CE9A4875F710D966C6A744FEC17 /* CodableTransform.swift */,
+				A8107277AE5817A374BADDD06C68089A /* CustomDateFormatTransform.swift */,
+				CBA568494336269299D798DE92E953D1 /* DataTransform.swift */,
+				E5ADA90A07E02379F51CF5DE01B9EE95 /* DateFormatterTransform.swift */,
+				5B94DD2405474A2BAC86D17F6B28A306 /* DateTransform.swift */,
+				E4C1A0B824ABA1882B6441155EAB7D14 /* DictionaryTransform.swift */,
+				B81B5B88F519EA4FF81E7E3F3CBD776A /* EnumOperators.swift */,
+				B6FC30AA288B1F5F02DC94A10D7624FD /* EnumTransform.swift */,
+				FAA0310DFF611783F1306D547A043A7F /* FromJSON.swift */,
+				891C0D2DE8DCCA540D5D8D33BCDD9BD5 /* HexColorTransform.swift */,
+				A19699C6EE94F93E7D2E31792DD1BEE6 /* ImmutableMappable.swift */,
+				D0768364BAA5816A9F546E328B616733 /* IntegerOperators.swift */,
+				B5989A88397B3DBFC64E1204AD6F4A7C /* ISO8601DateTransform.swift */,
+				FEE73D22F1DF9AE70811FD0E86F64AFA /* Map.swift */,
+				4AF5F06BCB2716ACA1E6BA690C56B0AB /* MapError.swift */,
+				1A9B38BB1EFE7F9F6A31D96752EE3296 /* Mappable.swift */,
+				CCAF861DED8493BAB9B384824A146C51 /* Mapper.swift */,
+				D7C499495B7397670FAB0FDA52EECA64 /* NSDecimalNumberTransform.swift */,
+				4436DD35B58DEA1FC48530EF62423A3A /* Operators.swift */,
+				1E17EDE767FA961D623CC3D9C52C639E /* ToJSON.swift */,
+				B5C2CB21D2CF885BFA0E6E6989A9813D /* TransformOf.swift */,
+				D2268E998B0FF71B344B191C8BDE7475 /* TransformOperators.swift */,
+				1B42C873F6A5DE615BC2F7111B7FB803 /* TransformType.swift */,
+				5E15BD0B38666A225E3774866D7CBB4A /* URLTransform.swift */,
+				E2B2D02A787364895DA501FCCB4F8864 /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		164FCD7991DF22ABCEEC3FFCD16B813D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				299C288BC0A204354BB015DC95C6FD20 /* SpeakerEmbeddingForiOS */,
+				25B6E890DCF63985B3DDD86254834211 /* WhisperDiarization */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		25B6E890DCF63985B3DDD86254834211 /* WhisperDiarization */ = {
+			isa = PBXGroup;
+			children = (
+				12951F8112899AAA53592756940F4725 /* AudioPreprocess.swift */,
+				757148E5531878D621BDF60D28C62F71 /* BufferQueue.swift */,
+				BE25F7E291609A42BA6F7D1C0697A2D3 /* CSSpeechRecognition.swift */,
+				BA3107377DA973AE63C7274CE00DD901 /* ggml-tiny.bin */,
+				94FECC830CD10A49C9FD3CD14060B836 /* WhisperDiarization.swift */,
+				27C28D76C1929259186F8B4C0DB5F246 /* algorithm  */,
+				D17793622881ADAB4B2AE9D88B84E788 /* Frameworks */,
+				05C0AF11227E94C3C84F18A3619146D0 /* Module */,
+				582E1948C5F1217A391DA93E9219A284 /* Pod */,
+				7FE5C153B8DC12828B66759537A15841 /* Support Files */,
+			);
+			name = WhisperDiarization;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		27C28D76C1929259186F8B4C0DB5F246 /* algorithm  */ = {
+			isa = PBXGroup;
+			children = (
+				8A8811BA1D9BBFD1E5503E83DA8244BD /* clustering */,
+				0993D51A2406D3302A5069F218B64A01 /* meter */,
+			);
+			name = "algorithm ";
+			path = "WhisperDiarization/Classes/algorithm ";
+			sourceTree = "<group>";
+		};
+		299C288BC0A204354BB015DC95C6FD20 /* SpeakerEmbeddingForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5FDFF6FAC075E1B4F4098D59CC96E /* silero_vad_cache.onnx */,
+				4920433454FE9895692F842194D2001E /* speaker_embedding0.onnx */,
+				EF229B776C1C1CC9741E92AF09F0016B /* SpeakerEmbedding.swift */,
+				932FDEDBC8A37657F4024BC76CA7A60C /* SpeakerEmbeddingModelHandler.swift */,
+				77457C363B82F39D7AD78FCFB808AD83 /* VADModelHandler.swift */,
+				2C3564D31C591D6799B8F053867E9BA5 /* VoiceActivityDetector.swift */,
+				7481DD1005D1851E7732067822C54BEA /* Frameworks */,
+				7C904BDE469B8F746B787513AD59F824 /* Pod */,
+				07865A552A7DA17453E3BC67ADBC3A92 /* Support Files */,
+			);
+			name = SpeakerEmbeddingForiOS;
+			path = ../../../SpeakerEmbeddingForiOS;
+			sourceTree = "<group>";
+		};
+		46D77918F1E26B3D1FCB1FEC4A2D2C53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127FF7AB0E064949F8569217F303B49B /* ObjectMapper */,
+				A0274EED2435F574950BF128CFA5B517 /* onnxruntime-c */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5793F739B4165FAD7E46F835806185A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7881C27EC87630AA189C3D4FFE2F3DB9 /* onnxruntime.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		582E1948C5F1217A391DA93E9219A284 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CC836A46A635C4C1FFBA2531251CC69D /* LICENSE */,
+				9BF01448FFF8BC7CDE7F241033FDED55 /* README.md */,
+				024581568B53D80B6F554C35858D2BDA /* WhisperDiarization.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		66DEFBF9FB5483827289A50E43E0CB99 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D0339293299FC4805CFA35849164E2D /* Pods-WhisperDiarization_Example */,
+				B04C30E7953513418FFACF5F32763273 /* Pods-WhisperDiarization_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7481DD1005D1851E7732067822C54BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4302EBC158B6112239CB9A70975647 /* onnxruntime_objc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C904BDE469B8F746B787513AD59F824 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F083E928061756E76B3A7C01BD993AEE /* LICENSE */,
+				B273B2D247BBB5FE82C3AC7BA496532B /* README.md */,
+				FFA2402D191670AA6215A8EA62200C22 /* SpeakerEmbeddingForiOS.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7D0339293299FC4805CFA35849164E2D /* Pods-WhisperDiarization_Example */ = {
+			isa = PBXGroup;
+			children = (
+				18B7665FACAA5A2C6D92D81624366784 /* Pods-WhisperDiarization_Example.modulemap */,
+				9944645B23DA38AD70DB8DE21E1ECABC /* Pods-WhisperDiarization_Example-acknowledgements.markdown */,
+				69D04C86CA511D4C946B9D6BD39B1ABD /* Pods-WhisperDiarization_Example-acknowledgements.plist */,
+				49F2F05BE9C57B628ECF42F8A24BC246 /* Pods-WhisperDiarization_Example-dummy.m */,
+				9B6E228CA332CC45F14CCBD9E0C4A985 /* Pods-WhisperDiarization_Example-frameworks.sh */,
+				AFCA8C9F42A482086A562683195DA0C9 /* Pods-WhisperDiarization_Example-Info.plist */,
+				50F1E3C771F0C8F08796566D4E24B42F /* Pods-WhisperDiarization_Example-resources.sh */,
+				A72131B2FB89BC16412EBB4D432E2E7A /* Pods-WhisperDiarization_Example-umbrella.h */,
+				C6D4B71DA33E21D02891C26DD5FEDDB7 /* Pods-WhisperDiarization_Example.debug.xcconfig */,
+				9DAD18CD363F25E45D3EB747DB04E684 /* Pods-WhisperDiarization_Example.release.xcconfig */,
+			);
+			name = "Pods-WhisperDiarization_Example";
+			path = "Target Support Files/Pods-WhisperDiarization_Example";
+			sourceTree = "<group>";
+		};
+		7FE5C153B8DC12828B66759537A15841 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD25F83571E16379A26ECF6C80CA82C /* ResourceBundle-WhisperDiarization-WhisperDiarization-Info.plist */,
+				DB5B188FA68D410D95E411C3491880FD /* WhisperDiarization.modulemap */,
+				CDD4A90CE9E133D869EF57893C15AA23 /* WhisperDiarization-dummy.m */,
+				562597A095E7EF1C4B15C33062ACD1AF /* WhisperDiarization-Info.plist */,
+				FC393CE8B65A49CC5D2ACCA08914B815 /* WhisperDiarization-prefix.pch */,
+				DD5DD423EFD77AFF8CAD26C0AC1031C8 /* WhisperDiarization-umbrella.h */,
+				B6B560F5B10326FDDB52D610047F5089 /* WhisperDiarization.debug.xcconfig */,
+				4CDE84A5E87FE60C0233F2D1F5A56EC5 /* WhisperDiarization.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WhisperDiarization";
+			sourceTree = "<group>";
+		};
+		8A8811BA1D9BBFD1E5503E83DA8244BD /* clustering */ = {
+			isa = PBXGroup;
+			children = (
+				3A7ABFE7FAD155FBE889D1DD0A638F79 /* AggClustering.cpp */,
+				88E144C60BE75CCA26D4A92E2FF42305 /* AggClusteringWrapper.h */,
+				8510995C60B6319538DBEDF3F4819F95 /* AggClusteringWrapper.mm */,
+				E8F90A9303B8B7A67136966CDE458E4F /* Cluster.swift */,
+				FC6C50B6FF40390587E2ABE16E19BC45 /* DefaultClusteringAlgorithm.swift */,
+			);
+			name = clustering;
+			path = clustering;
+			sourceTree = "<group>";
+		};
+		A0274EED2435F574950BF128CFA5B517 /* onnxruntime-c */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6B635DD7A5AD499E5635ACB81C602 /* coreml_provider_factory.h */,
+				DC07AA5B57CB0C6F973C158CAEE3456B /* cpu_provider_factory.h */,
+				6AE886D3256A56B114D6BE0CA9315198 /* onnxruntime_c_api.h */,
+				D08F7CAD0BE0321BA0F1F14BFDBEF014 /* onnxruntime_cxx_api.h */,
+				D2772E18A3A91B32EC00DEC15D4A492E /* onnxruntime_cxx_inline.h */,
+				5793F739B4165FAD7E46F835806185A1 /* Frameworks */,
+				037F76DA00951D3F0CBA14860C18FA2E /* Support Files */,
+			);
+			name = "onnxruntime-c";
+			path = "onnxruntime-c";
+			sourceTree = "<group>";
+		};
+		B04C30E7953513418FFACF5F32763273 /* Pods-WhisperDiarization_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF5C44F18194047788488930617932 /* Pods-WhisperDiarization_Tests.modulemap */,
+				8030B4E3AD55441D631B36FF059B7543 /* Pods-WhisperDiarization_Tests-acknowledgements.markdown */,
+				ADDB6B21BEF43C78DE895B55DE121083 /* Pods-WhisperDiarization_Tests-acknowledgements.plist */,
+				89D2016176AB539649206AEA091E1051 /* Pods-WhisperDiarization_Tests-dummy.m */,
+				D7CF02827BFF4444C330AE96B9147A9F /* Pods-WhisperDiarization_Tests-Info.plist */,
+				6E7A279F69400ECFAB73573C9FE8A812 /* Pods-WhisperDiarization_Tests-umbrella.h */,
+				EBCAF9F2043649375F3FB1290E74F572 /* Pods-WhisperDiarization_Tests.debug.xcconfig */,
+				5E0A1198A9C755CB2A8BC8C2E0D606E3 /* Pods-WhisperDiarization_Tests.release.xcconfig */,
+			);
+			name = "Pods-WhisperDiarization_Tests";
+			path = "Target Support Files/Pods-WhisperDiarization_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				164FCD7991DF22ABCEEC3FFCD16B813D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				46D77918F1E26B3D1FCB1FEC4A2D2C53 /* Pods */,
+				01F89AD28575630A42F9EC0C8E30B4B7 /* Products */,
+				66DEFBF9FB5483827289A50E43E0CB99 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D17793622881ADAB4B2AE9D88B84E788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C21D38BF4F31FC7D489B471E1B7E69C /* whisperxx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B2D02A787364895DA501FCCB4F8864 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5E55A9894FEE14EFE9A25AC825CBD4C /* ObjectMapper.modulemap */,
+				A0A3EE7A780B193507ED8B20EE8A1C1D /* ObjectMapper-dummy.m */,
+				E0EDADAA51D34C4660B878F220B5EDDA /* ObjectMapper-Info.plist */,
+				37AD59EE3161D88B774FFA1C87F3B9F5 /* ObjectMapper-prefix.pch */,
+				BE52470C88A20883319D47B690CF9639 /* ObjectMapper-umbrella.h */,
+				77B223BA786DAF703905CD9E50C24FE0 /* ObjectMapper.debug.xcconfig */,
+				DED38763A8C3425D3CB1A841EA741802 /* ObjectMapper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AA9C3D661A580924137A5EE0A4C9D86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1602FF74C37367DA00B9039B53E53365 /* Pods-WhisperDiarization_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F049AD273FF19C3AF39AA87184C4D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510FBF3DECB66440ABC572721932C8F4 /* AggClusteringWrapper.h in Headers */,
+				EA6122FA6EAC650E4DC91EBF5539E7F4 /* SilhouetteScoreWrapper.h in Headers */,
+				E3527B2BD970A8ECFB340D08D1FB4617 /* WhisperDiarization-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60936B7C78E2D50D1E35CEA39C65D646 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FECA05902E21A7DEEA535321C46E50 /* SpeakerEmbeddingForiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC7EC0EEE429475509546E17A924E3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA20D13912351E4E5BE85E1B07E11A8 /* Pods-WhisperDiarization_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38B70581E9A9DF148E676978E0FF22F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F64952F31B918A1FE35BB27DAC18D8 /* ObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07B6416127E95E7D6E068918AC4AB5D0 /* WhisperDiarization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843C01A484F545172A7D41779A3BFA7B /* Build configuration list for PBXNativeTarget "WhisperDiarization" */;
+			buildPhases = (
+				38F049AD273FF19C3AF39AA87184C4D9 /* Headers */,
+				A9706E6D83CFB5AC981F186208A63254 /* Sources */,
+				F556171747ED02ECA7774FD3CEB3E9CE /* Frameworks */,
+				6C461AD44F095B3AA7A2F133DEB487CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E18EEA63FF47D5D1CDEBE107423DC71F /* PBXTargetDependency */,
+				AE5E32AD54392799B59BF9D0A7201E42 /* PBXTargetDependency */,
+				56BB63EF9308CEB1F26945C26EEB0569 /* PBXTargetDependency */,
+			);
+			name = WhisperDiarization;
+			productName = WhisperDiarization;
+			productReference = B7F014227F7A78F49E332EBC8622CE11 /* WhisperDiarization */;
+			productType = "com.apple.product-type.framework";
+		};
+		0D6EC17F6D473C126EC48FB660192CC9 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24279828D7071D533064F3FF1632F8F7 /* Build configuration list for PBXNativeTarget "SpeakerEmbeddingForiOS-SpeakerEmbedding" */;
+			buildPhases = (
+				AB319DBA94E9D467C42BBA44F2199BC7 /* Sources */,
+				E8A2295AD29F05916D1D8FF08C09DBA4 /* Frameworks */,
+				71AFAB1F104E3E6CB5513AE6F985B952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeakerEmbeddingForiOS-SpeakerEmbedding";
+			productName = SpeakerEmbedding;
+			productReference = 6E0CA16D7BDA881D8EE1E691D4243B83 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */;
+			productType = "com.apple.product-type.bundle";
+		};
+		162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E87BC112BC21907F81880D4606CE033 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				E38B70581E9A9DF148E676978E0FF22F /* Headers */,
+				A1726579A0112FB513977C3C22BC3C49 /* Sources */,
+				BF02D80FCEAE9AA5006E82B4455E6890 /* Frameworks */,
+				25791203AC3E635729D84FC9759B1777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */;
+			productType = "com.apple.product-type.framework";
+		};
+		A81188241A9F07112234699CD724526B /* WhisperDiarization-WhisperDiarization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9027D0FDB4FD4B454DD8A5162CFB3D /* Build configuration list for PBXNativeTarget "WhisperDiarization-WhisperDiarization" */;
+			buildPhases = (
+				CFBBBE4C16D67EEFDC0F1EB4AF6D5716 /* Sources */,
+				9A826F7962FEBE08051744A7F4B3B27D /* Frameworks */,
+				76F5DDD3CBDDE373A523CEE99453C87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WhisperDiarization-WhisperDiarization";
+			productName = WhisperDiarization;
+			productReference = D6CA33717BBFFDD18F34E0E9F8CA5A2B /* WhisperDiarization-WhisperDiarization */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BB01554A2693E3FF64FF373E2C3B679C /* Pods-WhisperDiarization_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADFC22863FF2FE6EA8C8637424F8389 /* Build configuration list for PBXNativeTarget "Pods-WhisperDiarization_Example" */;
+			buildPhases = (
+				1AA9C3D661A580924137A5EE0A4C9D86 /* Headers */,
+				D2C190B09C5B7E8A4122E66FAC737346 /* Sources */,
+				4CF4790EDA21830B14D190CB0D642765 /* Frameworks */,
+				AC3E5849828AE2D02DB843A00B228D4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34DF6CA43E48195B7B7B59B04DBCEA1A /* PBXTargetDependency */,
+				7CD928E8330985F289984A972329B9B2 /* PBXTargetDependency */,
+				296C9E698570A9A80ADA4CDBD695DB70 /* PBXTargetDependency */,
+				E671C5847FE5FC7FCE8EC4C66021431A /* PBXTargetDependency */,
+			);
+			name = "Pods-WhisperDiarization_Example";
+			productName = Pods_WhisperDiarization_Example;
+			productReference = 7909D84985070FCAE2143FF12B897DEC /* Pods-WhisperDiarization_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		D15C4B9C85FD62740FCBBE535E6BE1E0 /* SpeakerEmbeddingForiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC62DAD23A01B251CD40183933B3DE59 /* Build configuration list for PBXNativeTarget "SpeakerEmbeddingForiOS" */;
+			buildPhases = (
+				60936B7C78E2D50D1E35CEA39C65D646 /* Headers */,
+				AA6A65DC6ADCBDBD461508C93F50668B /* Sources */,
+				74667CB36F04C752BCE5E0571E8304E7 /* Frameworks */,
+				B02428D4AD0E23D9BD7258BC97DC0A84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1556B4C6B90E3C15E27555593586A18 /* PBXTargetDependency */,
+				D8B62246476C8DD1F4B3F435A953C442 /* PBXTargetDependency */,
+			);
+			name = SpeakerEmbeddingForiOS;
+			productName = SpeakerEmbeddingForiOS;
+			productReference = 75A3023B5F8EDE36AC9440C24B7D659E /* SpeakerEmbeddingForiOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2EFF9B51902116BC518CE07028F234B /* Pods-WhisperDiarization_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E6D96CF30C47F737AD8D3A74384013 /* Build configuration list for PBXNativeTarget "Pods-WhisperDiarization_Tests" */;
+			buildPhases = (
+				8EC7EC0EEE429475509546E17A924E3E /* Headers */,
+				1ADC419C5955676A5B0156B06999F4B8 /* Sources */,
+				F4C5355B34C83B8E85546780A97CBD29 /* Frameworks */,
+				FE04909083663718E8B0F95F258961BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				087DFDE857B55DB17352825244DD94EF /* PBXTargetDependency */,
+			);
+			name = "Pods-WhisperDiarization_Tests";
+			productName = Pods_WhisperDiarization_Tests;
+			productReference = 39CCC7BC3A107028226DA9E09FB995A1 /* Pods-WhisperDiarization_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 01F89AD28575630A42F9EC0C8E30B4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */,
+				01D26C9790741D5F08E2B47A48D79331 /* onnxruntime-c */,
+				BB01554A2693E3FF64FF373E2C3B679C /* Pods-WhisperDiarization_Example */,
+				F2EFF9B51902116BC518CE07028F234B /* Pods-WhisperDiarization_Tests */,
+				D15C4B9C85FD62740FCBBE535E6BE1E0 /* SpeakerEmbeddingForiOS */,
+				0D6EC17F6D473C126EC48FB660192CC9 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */,
+				07B6416127E95E7D6E068918AC4AB5D0 /* WhisperDiarization */,
+				A81188241A9F07112234699CD724526B /* WhisperDiarization-WhisperDiarization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25791203AC3E635729D84FC9759B1777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C461AD44F095B3AA7A2F133DEB487CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71AFAB1F104E3E6CB5513AE6F985B952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEB6F069B9A950A022F53B6EAE444A1 /* silero_vad_cache.onnx in Resources */,
+				C34CE6A6216C3BB721B7F3FD615540E7 /* speaker_embedding0.onnx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F5DDD3CBDDE373A523CEE99453C87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36528256DF415BCF30042FF14245BFA1 /* ggml-tiny.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3E5849828AE2D02DB843A00B228D4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02428D4AD0E23D9BD7258BC97DC0A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04909083663718E8B0F95F258961BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A678187E179F578A4C83F5403F96960 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/onnxruntime-c/onnxruntime-c-xcframeworks.sh",
+				"${PODS_ROOT}/onnxruntime-c/onnxruntime.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/onnxruntime-c/onnxruntime.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/onnxruntime-c/onnxruntime-c-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADC419C5955676A5B0156B06999F4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E2C525E59F47420C1713D6E8B48A83 /* Pods-WhisperDiarization_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1726579A0112FB513977C3C22BC3C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B449DA71AEEF878482A26399CA9568D3 /* CodableTransform.swift in Sources */,
+				1C8C33626D4B515F7C3416A54BCD9B21 /* CustomDateFormatTransform.swift in Sources */,
+				621D74548A8CABDE4A330FEDD6F4FD8E /* DataTransform.swift in Sources */,
+				2DBA3EBF9138795BF487751527499F20 /* DateFormatterTransform.swift in Sources */,
+				39A4432E8C1DB203709C70DDD9C3D58A /* DateTransform.swift in Sources */,
+				C7A75B95E04CA4ACE3C3F002E658409C /* DictionaryTransform.swift in Sources */,
+				471FC0BF392F6EBEC37D36AFADBF9D07 /* EnumOperators.swift in Sources */,
+				60172A74CDB786B63D9BF8195669DBF5 /* EnumTransform.swift in Sources */,
+				9374C23021FD1266659BDA9EB4BB41FC /* FromJSON.swift in Sources */,
+				3E334140FBE5DFD4DDA5C3D3FCB54B9A /* HexColorTransform.swift in Sources */,
+				C14EAF94DFF6C99436052FDA9333FB2F /* ImmutableMappable.swift in Sources */,
+				E288BDF41B3C287145911A343BB1F991 /* IntegerOperators.swift in Sources */,
+				96017BC929FFDBD22711B1022DE4CE2D /* ISO8601DateTransform.swift in Sources */,
+				6964E59428F6ECCEA845D1684AA20B39 /* Map.swift in Sources */,
+				E5EC111C9EB089D63E72B9CDBE40D616 /* MapError.swift in Sources */,
+				D84BACBC4F42A86472652CCD5205F1FA /* Mappable.swift in Sources */,
+				56437A90E72B34971174E333CA13CE04 /* Mapper.swift in Sources */,
+				3EA3D3809293130859481308A6E750F1 /* NSDecimalNumberTransform.swift in Sources */,
+				B43B118A2EBEA4974052F12F614C13C6 /* ObjectMapper-dummy.m in Sources */,
+				D48DE1E5756BD4111DC7163FCCAEBF01 /* Operators.swift in Sources */,
+				17E9283ADA107CC34D25395AB5F67212 /* ToJSON.swift in Sources */,
+				DF24CE81C8CA841B807B63E1FED38259 /* TransformOf.swift in Sources */,
+				DD5F9831BD57D404B314AE30D869AAD9 /* TransformOperators.swift in Sources */,
+				20CCEE43CCC7613E3812B73214688D48 /* TransformType.swift in Sources */,
+				4990C571DE02BFFCC77DB6E47CB678C3 /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9706E6D83CFB5AC981F186208A63254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840E2E033502B40159DF58D1ED21AFD6 /* AggClustering.cpp in Sources */,
+				308DE0CCA1F57752986EBBAE1AF6FB2D /* AggClusteringWrapper.mm in Sources */,
+				44559ED577E0FD51DF9E11141E5189B8 /* AudioPreprocess.swift in Sources */,
+				A0E10F57E4BCA507F928C691798A45AF /* BufferQueue.swift in Sources */,
+				20CDA9618B09C29126A5E21A89135554 /* Cluster.swift in Sources */,
+				100E6E8E8F6FF6449F782940B65BA119 /* CSSpeechRecognition.swift in Sources */,
+				1AF60BF79A190FCF63C9135BF6292F7E /* DefaultClusteringAlgorithm.swift in Sources */,
+				1AA0CC642A715A07F0EB0313DCB04CA4 /* MLTools.swift in Sources */,
+				6444BA82DAE36778F057B88B838160D8 /* silhouette_score.cpp in Sources */,
+				FA4346A49D3F1C132FE2F31C87402506 /* SilhouetteScoreWrapper.mm in Sources */,
+				88AE40E9504B60FB729CD33350FC6376 /* SpeakerAnalyseModule.swift in Sources */,
+				D8E71B907ACA89EEE21AA719F950695A /* SpeakerAnalyseTempModule.swift in Sources */,
+				706A0C3BEA6DFE2739D6FCA2A97EE584 /* SpeechRecognizeModule.swift in Sources */,
+				A7BC12B3EFCD0F712EEAEC602498C1CE /* VADModule.swift in Sources */,
+				38E09C35CDE537B845BC824107B27F22 /* WhisperDiarization.swift in Sources */,
+				62C958965D43F499F62C6935AD317076 /* WhisperDiarization-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA6A65DC6ADCBDBD461508C93F50668B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63B89F02DDA304D7F30E4DC2DACE056 /* SpeakerEmbedding.swift in Sources */,
+				C9C4216E4AD462E21B74FAF9C17D0B8B /* SpeakerEmbeddingForiOS-dummy.m in Sources */,
+				546C906FAFCB0A669122C46AAE38D3F5 /* SpeakerEmbeddingModelHandler.swift in Sources */,
+				78397012DB20B182137458611835885C /* VADModelHandler.swift in Sources */,
+				4104C5610D76199B82EB473CCB2436F6 /* VoiceActivityDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB319DBA94E9D467C42BBA44F2199BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBBBE4C16D67EEFDC0F1EB4AF6D5716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C190B09C5B7E8A4122E66FAC737346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B585A096DD9D0159A06DFA2BAEFDF80 /* Pods-WhisperDiarization_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087DFDE857B55DB17352825244DD94EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WhisperDiarization_Example";
+			target = BB01554A2693E3FF64FF373E2C3B679C /* Pods-WhisperDiarization_Example */;
+			targetProxy = 12B14A37F93939EBD3123FACCE43242E /* PBXContainerItemProxy */;
+		};
+		296C9E698570A9A80ADA4CDBD695DB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhisperDiarization;
+			target = 07B6416127E95E7D6E068918AC4AB5D0 /* WhisperDiarization */;
+			targetProxy = 4A20929EDECE1872311D3914AFEED1CC /* PBXContainerItemProxy */;
+		};
+		34DF6CA43E48195B7B7B59B04DBCEA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 41A404F6A2D6E604558E0615C2FC645C /* PBXContainerItemProxy */;
+		};
+		56BB63EF9308CEB1F26945C26EEB0569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WhisperDiarization-WhisperDiarization";
+			target = A81188241A9F07112234699CD724526B /* WhisperDiarization-WhisperDiarization */;
+			targetProxy = 70AC8953BC99AB31480BA2FB36F164EB /* PBXContainerItemProxy */;
+		};
+		7CD928E8330985F289984A972329B9B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpeakerEmbeddingForiOS;
+			target = D15C4B9C85FD62740FCBBE535E6BE1E0 /* SpeakerEmbeddingForiOS */;
+			targetProxy = C72306D5D2069D908B2C205EFBB1DA29 /* PBXContainerItemProxy */;
+		};
+		AE5E32AD54392799B59BF9D0A7201E42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpeakerEmbeddingForiOS;
+			target = D15C4B9C85FD62740FCBBE535E6BE1E0 /* SpeakerEmbeddingForiOS */;
+			targetProxy = 8D26120E40B7C9866E9002EBEE914DD9 /* PBXContainerItemProxy */;
+		};
+		D8B62246476C8DD1F4B3F435A953C442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "onnxruntime-c";
+			target = 01D26C9790741D5F08E2B47A48D79331 /* onnxruntime-c */;
+			targetProxy = 0C20AD8B049412463E8737F9E8512664 /* PBXContainerItemProxy */;
+		};
+		E1556B4C6B90E3C15E27555593586A18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SpeakerEmbeddingForiOS-SpeakerEmbedding";
+			target = 0D6EC17F6D473C126EC48FB660192CC9 /* SpeakerEmbeddingForiOS-SpeakerEmbedding */;
+			targetProxy = F6DE48F5F7AF34E395703939DDF9AD64 /* PBXContainerItemProxy */;
+		};
+		E18EEA63FF47D5D1CDEBE107423DC71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = FB9F9A261B59D45591A38DA0CA2DAE5C /* PBXContainerItemProxy */;
+		};
+		E671C5847FE5FC7FCE8EC4C66021431A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "onnxruntime-c";
+			target = 01D26C9790741D5F08E2B47A48D79331 /* onnxruntime-c */;
+			targetProxy = 931F687E0CEB066EC101EC64738DCFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FA2EF7F6B224AEAA354C5B77112C3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5754FE0EC8E707304F8A061FC2415F55 /* SpeakerEmbeddingForiOS.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SpeakerEmbeddingForiOS";
+				IBSC_MODULE = SpeakerEmbeddingForiOS;
+				INFOPLIST_FILE = "Target Support Files/SpeakerEmbeddingForiOS/ResourceBundle-SpeakerEmbedding-SpeakerEmbeddingForiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = SpeakerEmbedding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		15680CCA83069211D1C8D07F5508BCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF010FE13FA9066F8D4646BB3BB5EC67 /* onnxruntime-c.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D58E6A0563219552302C90BC241CA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED38763A8C3425D3CB1A841EA741802 /* ObjectMapper.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E56F805B105C9F094C44A3EDBE916BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D4B71DA33E21D02891C26DD5FEDDB7 /* Pods-WhisperDiarization_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhisperDiarization_Example/Pods-WhisperDiarization_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhisperDiarization_Example/Pods-WhisperDiarization_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		412B2AA3A1C29C1C4EA3DE178B2DA1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDE84A5E87FE60C0233F2D1F5A56EC5 /* WhisperDiarization.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WhisperDiarization";
+				IBSC_MODULE = WhisperDiarization;
+				INFOPLIST_FILE = "Target Support Files/WhisperDiarization/ResourceBundle-WhisperDiarization-WhisperDiarization-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = WhisperDiarization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		481C10E88624D5EF6C1FC97207EDEF3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5754FE0EC8E707304F8A061FC2415F55 /* SpeakerEmbeddingForiOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS.modulemap";
+				PRODUCT_MODULE_NAME = SpeakerEmbeddingForiOS;
+				PRODUCT_NAME = SpeakerEmbeddingForiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5343FF2E82D615612F6095A429576035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC641315DFD037023F3DCB6F6AB4BCA /* SpeakerEmbeddingForiOS.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SpeakerEmbeddingForiOS";
+				IBSC_MODULE = SpeakerEmbeddingForiOS;
+				INFOPLIST_FILE = "Target Support Files/SpeakerEmbeddingForiOS/ResourceBundle-SpeakerEmbedding-SpeakerEmbeddingForiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = SpeakerEmbedding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7F817FEE56851292198D75C032BA09DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B560F5B10326FDDB52D610047F5089 /* WhisperDiarization.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WhisperDiarization/WhisperDiarization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhisperDiarization/WhisperDiarization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WhisperDiarization/WhisperDiarization.modulemap";
+				PRODUCT_MODULE_NAME = WhisperDiarization;
+				PRODUCT_NAME = WhisperDiarization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84C9182A99102268492D36D87B3A8B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCAF9F2043649375F3FB1290E74F572 /* Pods-WhisperDiarization_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhisperDiarization_Tests/Pods-WhisperDiarization_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhisperDiarization_Tests/Pods-WhisperDiarization_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9692988825CEDD760F82CD074861C65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC641315DFD037023F3DCB6F6AB4BCA /* SpeakerEmbeddingForiOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/SpeakerEmbeddingForiOS/SpeakerEmbeddingForiOS.modulemap";
+				PRODUCT_MODULE_NAME = SpeakerEmbeddingForiOS;
+				PRODUCT_NAME = SpeakerEmbeddingForiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B19C301280550FA0E56888B3EB2A4172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0A1198A9C755CB2A8BC8C2E0D606E3 /* Pods-WhisperDiarization_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhisperDiarization_Tests/Pods-WhisperDiarization_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhisperDiarization_Tests/Pods-WhisperDiarization_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2F87D106F210036470ADB490B1A5145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B560F5B10326FDDB52D610047F5089 /* WhisperDiarization.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WhisperDiarization";
+				IBSC_MODULE = WhisperDiarization;
+				INFOPLIST_FILE = "Target Support Files/WhisperDiarization/ResourceBundle-WhisperDiarization-WhisperDiarization-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = WhisperDiarization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CC69FDCC85F752ED9774BD6F64A791F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD6B1F96FCB6058B9F49B599A0BF9D0 /* onnxruntime-c.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6A1B7B0E0D3E55E274DB5448258A73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDE84A5E87FE60C0233F2D1F5A56EC5 /* WhisperDiarization.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WhisperDiarization/WhisperDiarization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhisperDiarization/WhisperDiarization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WhisperDiarization/WhisperDiarization.modulemap";
+				PRODUCT_MODULE_NAME = WhisperDiarization;
+				PRODUCT_NAME = WhisperDiarization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCBE627916DF3DB6A1E2A3914ED5E2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B223BA786DAF703905CD9E50C24FE0 /* ObjectMapper.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBBE2330F1582BAAC324204D8A4774A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAD18CD363F25E45D3EB747DB04E684 /* Pods-WhisperDiarization_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhisperDiarization_Example/Pods-WhisperDiarization_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhisperDiarization_Example/Pods-WhisperDiarization_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24279828D7071D533064F3FF1632F8F7 /* Build configuration list for PBXNativeTarget "SpeakerEmbeddingForiOS-SpeakerEmbedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA2EF7F6B224AEAA354C5B77112C3E9 /* Debug */,
+				5343FF2E82D615612F6095A429576035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E6D96CF30C47F737AD8D3A74384013 /* Build configuration list for PBXNativeTarget "Pods-WhisperDiarization_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C9182A99102268492D36D87B3A8B00 /* Debug */,
+				B19C301280550FA0E56888B3EB2A4172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7952BEBED5F91B23DF557A9921B9F1 /* Build configuration list for PBXAggregateTarget "onnxruntime-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15680CCA83069211D1C8D07F5508BCFD /* Debug */,
+				CC69FDCC85F752ED9774BD6F64A791F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E87BC112BC21907F81880D4606CE033 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBE627916DF3DB6A1E2A3914ED5E2F1 /* Debug */,
+				1D58E6A0563219552302C90BC241CA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843C01A484F545172A7D41779A3BFA7B /* Build configuration list for PBXNativeTarget "WhisperDiarization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F817FEE56851292198D75C032BA09DC /* Debug */,
+				D6A1B7B0E0D3E55E274DB5448258A73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9027D0FDB4FD4B454DD8A5162CFB3D /* Build configuration list for PBXNativeTarget "WhisperDiarization-WhisperDiarization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F87D106F210036470ADB490B1A5145 /* Debug */,
+				412B2AA3A1C29C1C4EA3DE178B2DA1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC62DAD23A01B251CD40183933B3DE59 /* Build configuration list for PBXNativeTarget "SpeakerEmbeddingForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481C10E88624D5EF6C1FC97207EDEF3D /* Debug */,
+				9692988825CEDD760F82CD074861C65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADFC22863FF2FE6EA8C8637424F8389 /* Build configuration list for PBXNativeTarget "Pods-WhisperDiarization_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E56F805B105C9F094C44A3EDBE916BB /* Debug */,
+				EBBE2330F1582BAAC324204D8A4774A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

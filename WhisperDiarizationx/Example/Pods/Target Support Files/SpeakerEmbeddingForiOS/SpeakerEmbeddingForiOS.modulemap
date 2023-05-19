@@ -1,0 +1,6 @@
+framework module SpeakerEmbeddingForiOS {
+  umbrella header "SpeakerEmbeddingForiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

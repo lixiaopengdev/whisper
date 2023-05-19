@@ -1,0 +1,6 @@
+framework module Pods_WhisperDiarization_Tests {
+  umbrella header "Pods-WhisperDiarization_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
